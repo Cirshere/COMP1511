@@ -1,0 +1,19 @@
+// Program to display the integers 32 - 126 in decimal and hexadecimal
+// Christopher Hoang, z5259780
+// 28/04/2020
+
+#include<stdio.h>
+
+int main (void) {
+
+    int i = 32;
+    
+    while (i >= 32 && i <= 126) {
+    
+        printf ("%d %x %");
+        
+        i++:
+    }
+
+    return 0;
+}

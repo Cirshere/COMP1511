@@ -1,0 +1,11 @@
+// Tutorial 7
+// z5259780 31/03/2020
+
+#include<stdio.h>
+
+//getchar putchar fgets
+
+// getchar -> accepts text from console and assigns to a char
+// E.g. int character = getchar();
+
+

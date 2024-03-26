@@ -1,0 +1,92 @@
+// Arrays practice - Program to keep track of player scores
+// z5259780 Christopher Hoang 04/03/2020
+
+#include<stdio.h>
+
+#define NUM_PLAYERS 4
+
+void displayScores (int scoreArr[]); // Displays all players scores
+void lowest (int scoreArr[]);        // Finds lowest score and displays
+void highest (int scoreArr[]);       // Find highest score and displays
+void total (int scoreArr[]);         // Total of all players score
+
+
+
+int main (void) {
+
+    int scores[NUM_PLAYERS] = {3};
+    
+    scores[0] = 94;
+    scores[1] = 75;
+    scores[2] = 54;
+    scores[3] = 63;
+    
+    displayScores(scores);
+    lowest(scores);
+    highest(scores);
+    total(scores);
+    
+    return 0;
+}
+
+void displayScores(int scoreArr[]) {
+
+    int i = 0;
+    
+    while (i < NUM_PLAYERS) {    
+        printf("Player %d has a score of %d!\n", i, scoreArr[i]);        
+        i++;
+    }
+}
+
+void lowest (int scoreArr[]) {
+    
+    int i = 0;
+    int lowestScore = 101;
+    int playerNum = 0;
+    
+    while (i < NUM_PLAYERS) {
+    
+        if (scoreArr[i] < lowestScore) {
+            lowestScore = scoreArr[i];
+            playerNum = i;
+        
+        }
+        i++;
+    }
+
+    printf("Player %d has the lowest score of %d.\n", playerNum, lowestScore);
+}
+
+void highest (int scoreArr[]) {
+
+    int i = 0;
+    int highestScore = -1;
+    int playerNum = 0;
+
+    while (i < NUM_PLAYERS) {
+    
+        if(scoreArr[i] > highestScore) {
+            highestScore = scoreArr[i];
+            playerNum = i;
+        }
+        i++;
+    }
+    
+    printf("Player %d has the highest score of %d.\n", playerNum, highestScore); 
+}
+
+void total (int scoreArr[]) {
+
+    int i = 0;
+    int total = 0;
+    
+    while (i < NUM_PLAYERS) {
+    
+        total += scoreArr[i]
+        i++;
+    }
+    printf("The total score of all players is %d\n", total);
+}
+
+

@@ -1,0 +1,16 @@
+// Lecture 8 - Experimenting with pointers
+// z5259780, Christopher Hoang
+
+#include<stdio.h>
+
+int main (void) {
+
+    int j;
+    int *jp = &j;
+    
+    scanf("%d", &j);
+    
+    printf("Value of variable %p is %d", jp, *jp);
+
+    return 0;
+}
